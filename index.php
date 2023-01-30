@@ -634,7 +634,7 @@ padding-top: 0px;}
 
 <main>
 	
-<?php include_once('./homePageProgramTile.php') ?>
+<?php include_once('./homePageTiles/homePageProgramTile.php') ?>
        
 
 <div class="slider-one" data-example-id="simple-carousel" id="success">
@@ -767,7 +767,7 @@ jQuery(document).ready(function(){
   });
   $(".dot5").click(function(){
     $("#carousel-one").carousel(4);
-  });
+  });pag
   $(".dot6").click(function(){
     $("#carousel-one").carousel(5);
   });
