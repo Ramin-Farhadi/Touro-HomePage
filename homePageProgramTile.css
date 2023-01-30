@@ -1,0 +1,136 @@
+.mainTiles {
+  position: relative;
+  padding: 80px 50px 0px 50px;
+  /* padding-top: 80px;
+    padding-left: 50px ;
+    padding-right: 50px ; */
+}
+.backImg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  object-fit: scale-down;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("./images/back.png");
+  background-repeat: repeat-x repeat-y;
+}
+.tileWords {
+  /* position: relative; */
+}
+.tileTitle {
+  padding-top: 1%;
+  text-align: center;
+  color: white;
+  margin-bottom: 12px;
+}
+@media only screen and (max-width: 1024px) {
+  .mainTiles {
+    padding: 20px 30px 0px 30px;
+  }
+  .ptile {
+    position: relative;
+    height: 375px;
+    background-color: #f7b90a;
+  }
+  .tileCard {
+    padding: 10px !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .mainTiles {
+    padding: 110px 20px 0px 20px;
+  }
+  .ptile {
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (min-width: 1299px) {
+  .mainTiles {
+    padding: 70px 15% 0px 15%;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .mainTiles {
+    padding: 70px 20% 0px 20%;
+  }
+}
+
+.ptile {
+  /* margin: 10px 0 ; */
+  position: relative;
+  height: 370px;
+  background-color: #f7b90a;
+}
+.childTile {
+  position: absolute;
+  background-color: #023673;
+  width: 100%;
+  height: 99%;
+  transition: transform 0.4s ease-in-out;
+}
+.tileImage {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+  object-position: center;
+}
+.childTile:hover {
+  transform: translateY(-7px) translateX(-7px);
+}
+.tileLinks {
+  padding-left: 0;
+  color: #0a83f3;
+  list-style: none;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.tileLinks li {
+  display: inline;
+  padding: 0 25px 0 25px;
+  color: #0a83f3;
+}
+.tileLinks li a {
+  text-decoration: none;
+  color: #0a83f3;
+}
+.tileLinks li:hover,
+.tileLinks li a:hover {
+  color: #f7b90a;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.tileSign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 70%;
+  color: white;
+}
+.tileSign P {
+  font-family: "Conv_AvenirLTStd-Black";
+  font-size: 2rem;
+}
+.tileSignbtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tileSignbtns button {
+  font-family: "Conv_AvenirLTStd-book";
+  background-color: #023673;
+  color: #f7b90a;
+  border: solid 1px #f7b90a;
+  border-radius: 5px;
+  padding: 15px 30px;
+  margin: 10px;
+}
+.tileSignbtns button:hover {
+  background-color: #f7b90a;
+}
